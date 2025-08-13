@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AgencyDropdown } from "./AgencyDropdown";
+import { AgencyDropdownTabs } from "./AgencyDropdownTabs";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navigation = () => {
                 />
               </button>
               
-              <AgencyDropdown 
+              <AgencyDropdownTabs 
                 isOpen={isDropdownOpen} 
                 onOpenChange={setIsDropdownOpen}
               />
